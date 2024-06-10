@@ -1,9 +1,9 @@
-cffi==1.12.3
+cffi==1.16.0
 entrypoints==0.3
 flake8==3.7.7
 mccabe==0.6.1
 mutagen==1.42.0
-numpy==1.16.3
+numpy==1.22.0
 pychalk==2.0.1
 pycodestyle==2.5.0
 pycparser==2.19
