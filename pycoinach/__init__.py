@@ -27,7 +27,7 @@ def export_test(path, entry, ogg):
     ogg.seek(0)
     ogg_metadata.save(ogg)
 
-    with open(f'./music/ex2/{name}.ogg', 'wb') as f:
+    with open(f'./{name}.ogg', 'wb') as f:
         ogg.seek(0)
         f.write(ogg.read())
 
@@ -54,4 +54,4 @@ def pysoundfile_test(path, entry, ogg, loops=2):
         for i in range(loops):
             data = np.concatenate((data, data_loop), axis=0)
 
-    sf.write(f'./music/ex2/{name}.flac', data, samplerate)
+    sf.write(f'./{name}.flac', data, samplerate)
